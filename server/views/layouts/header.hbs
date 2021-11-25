@@ -1,0 +1,27 @@
+<header>
+    <h1><span>S</span>RCOTS</h1>
+    <nav>
+        <ul>
+            <li><a href="/" 
+                {{#if home}}
+                    class="active"
+                {{/if}}
+            >HOME</a></li>
+            {{#if admin}}
+                <li><a href="/login"
+                    {{#if dashboard}}
+                        class="active"
+                    {{/if}}
+                >DASHBOARD</a></li>
+            {{/if}}
+            {{#if login}}
+            {{else}}
+                {{#if session}}
+                    <li><a href="/login">CERRAR SESIÓN</a></li>
+                {{else}}
+                    <li><a href="/login">INICIAR SESIÓN</a></li>
+                {{/if}}
+            {{/if}}
+        </ul>
+    </nav>
+</header>

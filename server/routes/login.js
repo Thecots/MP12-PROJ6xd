@@ -4,8 +4,10 @@ const jwt = require("jsonwebtoken");
 const User = require("../models/user");
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  res.render("login");
+router.get("/login", (req, res) => {
+  res.render("login",{
+    login: true
+  });
 });
 
 /* get */
