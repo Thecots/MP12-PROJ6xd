@@ -8,6 +8,53 @@
     outline: none;
 }
 
+:root{
+    --c-main: #6495ed;
+    --c-background: #dae0e6;
+}
+
 body{
-    background: #dae0e6 ;
+    background:  var(--c-background);
+}
+
+/* ----- header ----- */
+
+header{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+header h1{
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+header span{
+    color: var(--c-main);
+    font-size: 25px;
+    font-weight: 400;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 0;
+    font-weight: 500;
+}
+ul li a:hover{
+    color: var(--c-main);
+    border-bottom: 2px solid var(--c-main);
+}
+ul li a.active{
+    color: var(--c-main);
+    border-bottom: 2px solid var(--c-main);
 }
