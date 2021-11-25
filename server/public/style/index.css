@@ -50,3 +50,8 @@ main section{
     border-radius: 3px;
     padding: 10px;
 }
+
+main section h1{
+    font-weight: 400;
+    font-size: 25px;
+}

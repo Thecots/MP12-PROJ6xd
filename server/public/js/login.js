@@ -94,7 +94,7 @@ const iniciarSession = () => {
       if (res.ok) {
         localStorage.setItem("X-Access-Token", JSON.stringify(res.token));
         if (res.usuari.role == "ADMIN_ROLE") {
-          window.location.href = "/admin";
+          window.location.href = "/dashboard";
         } else {
           window.location.href = "/home";
         }
